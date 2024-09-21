@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Cálculos MRU</title>
+            <link rel="stylesheet" href="CSS/css-mruv.css">
+    </head>
+<body>
+
+<h1 class="titulo">Cálculos de Velocidad en Movimiento Rectilíneo Uniforme (MRU)</h1>
+
+<section class="container">
+    <div>
+        <h2>Calcular Velocidad Inicial<br> (v0 = v - a * t)</h2>
+        <input type="number" id="velocidadFinal" placeholder="Velocidad Final en m/s">
+        <input type="number" id="aceleracion" placeholder="Aceleración en m/s²">
+        <input type="number" id="tiempo" placeholder="Tiempo en s">
+        <button onclick="calcularVelocidadInicial()">Calcular Velocidad Inicial</button>
+        <div class="result" id="resultadoVelocidadInicial"></div>
+    </div>
+
+        <div>
+            <h2>Calcular Velocidad Final<br> (v = v0 + a * t)</h2>
+            <input type="number" id="velocidadInicial" placeholder="Velocidad Inicial en m/s">
+            <input type="number" id="aceleracion2" placeholder="Aceleración en m/s²">
+            <input type="number" id="tiempo2" placeholder="Tiempo en s">
+            <button onclick="calcularVelocidadFinal()">Calcular Velocidad Final</button>
+            <div class="result" id="resultadoVelocidadFinal"></div>
+        </div>
+
+            <a href="../Movimiento_RU/index.html" class="boton-enlace">Inicio</a>
+
+</section>
+
+<script src="JS/script-mruv.js"></script>
+
+</body>
+</html>

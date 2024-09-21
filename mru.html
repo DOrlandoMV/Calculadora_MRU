@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculos MRU</title>
+    <link rel="stylesheet" href="CSS/css-mru.css">
+</head>
+<body>
+
+<h1 class="titulo">Cálculos de Movimiento Rectilíneo Uniforme (MRU)</h1>
+
+<section class="container">
+    <div>
+        <h2>1. Calcular Distancia<br> (d = v * t)</h2>
+        <input type="number" id="velocidad" placeholder="Velocidad m/s">
+        <input type="number" id="tiempo" placeholder="Tiempo en s">
+        <button onclick="calcularDistancia()">Calcular Distancia</button>
+        <div class="result" id="resultadoDistancia"></div>
+    </div>
+
+        <div>
+            <h2>2. Calcular Velocidad<br> (v = d / t)</h2>
+            <input type="number" id="distancia" placeholder="Distancia m">
+            <input type="number" id="tiempo2" placeholder="Tiempo n s">
+            <button onclick="calcularVelocidad()">Calcular Velocidad</button>
+            <div class="result" id="resultadoVelocidad"></div>
+        </div>
+
+            <div>
+                <h2>3. Calcular Tiempo<br> (t = d / v)</h2>
+                <input type="number" id="distancia2" placeholder="Distancia m">
+                <input type="number" id="velocidad2" placeholder="Velocidad m/s">
+                <button onclick="calcularTiempo()">Calcular Tiempo</button>
+                <div class="result" id="resultadoTiempo"></div>
+            </div>
+
+            <a href="../Movimiento_RU/index.html" class="boton-enlace">Inicio</a>
+</section>
+<script src="JS/script-mru.js"></script>
+
+</body>
+</html>
+
